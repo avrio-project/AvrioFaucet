@@ -33,23 +33,23 @@ module.exports = {
 			password: 'faucet',
 			daemon: {
 				host: '127.0.0.1',
-				port: 32779
+				port: 24524
 			}
 		},
 
 		// The server the wallet API is running on
 		host: '127.0.0.1',
-		port: 32780,
+		port: 24562,
 
 		// Password for the wallet API
 		password: 'faucet',
 
 		// Coin configuration
-		defaultUnlockTime: 35,
+		defaultUnlockTime: 40,
 		defaultMixin: 2,
-		decimalPlaces: 3,
-		decimalDivisor: 10 ** 3, // 10 to the power of decimalPlaces
-		defaultFee: 0.5
+		decimalPlaces: 4,
+		decimalDivisor: 10 ** 4, // 10 to the power of decimalPlaces
+		defaultFee: 0.025
 	},
 
 	// Google reCaptcha v2 configuration
@@ -68,14 +68,14 @@ module.exports = {
 		port: 8909,
 
 		// The minimum amount of coins to be sent
-		minimumCoinsToBeSent: 1000,
+		minimumCoinsToBeSent: 0.001,
 
 		// The maximum amount of coins to be sent
-		maximumCoinsToBeSent: 25000,
+		maximumCoinsToBeSent: 0.01,
 
 		// Address validation
 		walletAddressLength: 98,
-		walletAddressStartsWith: 'XNU',
+		walletAddressStartsWith: 'AIO',
 
 		// Coins are claimable every this many seconds
 		claimableEvery: (24 * 60 * 60 * 1000), // 24 hours
@@ -84,14 +84,14 @@ module.exports = {
 	// Frontend configuration
 	frontend: {
 		// Coin configuration for the frontend
-		coinName: 'Xenium',
-		ticker: 'XNU',
+		coinName: 'Avrio',
+		ticker: 'AIO',
 
 		// Coin claiming interval as a string
 		claimableEvery: '24 hours',
 
 		// The person this faucet is run by, with Discord Tag
-		faucetOwner: 'TheDevMinerTV',
-		faucetOwnerDiscord: 'TheDevMinerTV (XNU)#9308'
+		faucetOwner: 'Leo Cornelius',
+		faucetOwnerDiscord: 'Leo Cornelius [AIO]#9160'
 	}
 }
